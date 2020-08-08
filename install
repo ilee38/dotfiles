@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+#example of linking: ls ~/dotfiles/.vimrc ~/.vimrc
+echo running install...

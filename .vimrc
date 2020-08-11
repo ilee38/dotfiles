@@ -63,6 +63,12 @@ set noerrorbells visualbell t_vb=
 " sometimes be convenient.
 set mouse+=a
 
+" Colored column
+set colorcolumn=80
+
+" Show (partial) command in status line.
+set showcmd
+
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys
 " for movement, rather than using more efficient movement commands, is also a
@@ -85,4 +91,6 @@ set runtimepath^=~/.vim/pack/vendor/start/bundle/ctrlp.vim
 " Enable TabNine plugin 
 set rtp+=~/.vim/pack/vendor/start/tabnine-vim
 
-" symlink test
+" Enable gruvbox theme
+autocmd vimenter * colorscheme gruvbox
+set background=dark "setting dark mode

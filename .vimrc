@@ -63,8 +63,8 @@ set noerrorbells visualbell t_vb=
 " sometimes be convenient.
 set mouse+=a
 
-" Colored column
-set colorcolumn=80
+" Colored column indicator
+set colorcolumn=120
 
 " Show (partial) command in status line.
 set showcmd

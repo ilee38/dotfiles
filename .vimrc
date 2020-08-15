@@ -61,13 +61,28 @@ set noerrorbells visualbell t_vb=
 
 " Enable mouse support. You should avoid relying on this too much, but it can
 " sometimes be convenient.
-set mouse+=a
+set mouse=a
 
 " Colored column indicator
 set colorcolumn=120
 
 " Show (partial) command in status line.
 set showcmd
+
+" Use the OS clipboard by default
+set clipboard=unnamed
+
+" Optimize for fast terminal conncections
+set ttyfast
+
+" Make tabs two spaces
+set tabstop=2
+
+" Show the cursor position
+set ruler
+
+" Show the current mode
+set showmode
 
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys
@@ -84,6 +99,10 @@ inoremap <Left>  <ESC>:echoe "Use h"<CR>
 inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
+
+
+"    PLUGINS   "
+" -------------"
 
 " Enable the ctrlp.vim plugin 
 set runtimepath^=~/.vim/pack/vendor/start/bundle/ctrlp.vim

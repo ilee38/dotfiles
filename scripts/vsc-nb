@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Opens VSCode in notebook folder
+cd "$HOME/Google-Drive/_notebook"
+code .

@@ -82,7 +82,10 @@ set tabstop=2
 set ruler
 
 " Show the current mode
-set showmode
+" set showmode
+
+" ... or not
+set noshowmode
 
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys
@@ -113,3 +116,6 @@ set rtp+=~/.vim/pack/vendor/start/tabnine-vim
 " Enable gruvbox theme
 autocmd vimenter * colorscheme gruvbox
 set background=dark "setting dark mode
+
+" Set Airline plugin theme
+"let g:airline_theme='powerlineish'

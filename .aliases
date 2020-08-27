@@ -16,11 +16,18 @@ fi
 # Always use color output for `ls`
 alias ls="command ls ${colorflag}"
 
+
 # Better ls
 alias ll="ls -lha"
+
+# Go to icloud
+alias icloud="cd $HOME/Library/Mobile\ Documents/com~apple~CloudDocs"
 
 # Human-readable disk usage
 alias dfh="df -Tha --total"
 
 # Reload shell
 alias reload="exec $SHELL -l"
+
+# Open my VSC notebook
+alias vsc-nb="$HOME/vsc-nb"
